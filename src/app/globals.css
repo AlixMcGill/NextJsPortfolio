@@ -1,13 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  --background: #ffffff;
+  --background: #eeca97;
+  --headerBackground: #F4C766;
+  --skillsBackground: #CA97EE;
+  --portfolioBackground: #97BBEE;
+  --socialMediaBackground: #EE9E97;
+  --footerBackground: #957E5E;
   --foreground: #171717;
+  --blackText: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Color Classes */
+
+.header-bg {
+  background-color: var(--headerBackground);
+}
+.skills-bg {
+  background-color: var(--skillsBackground);
+}
+.portfolio-bg {
+  background-color: var(--portfolioBackground);
+}
+.social-media-bg {
+  background-color: var(--socialMediaBackground);
+}
+.footer-bg {
+  background-color: var(--footerBackground);
+}
+
+.flex-container-spbtwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container-spar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  all: unset;
+}
+
+/* Margins */
+
+.margin-1rem {
+  margin: 1rem;
+}
+
+/* Fonts */
+
+.black-text {
+  color: var(--blackText)
+}
+
+.lily-script-font-regular {
+  font-family: "Lily Script One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans-font-regular {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.open-sans-font-bold {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.font-small {
+  font-size: 14px;
+}
+.font-medium {
+  font-size: 20px;
+}
+.font-large {
+  font-size: 24px;
+}
+.font-mid-large {
+  font-size: 40px;
+}
+.font-extra-large {
+  font-size: 96px;
+}
+
+.hard-shadow {
+  box-shadow: -6px 6px 0px black;
+}
+.hard-shadow-center {
+  box-shadow: 0px 6px 0px black;
+}
+
+.button-base-styles {
+  border-radius: 32px;
+  border: 3px solid black;
+  box-shadow: -6px 6px 0px black;
+}
+
+.button-size-large {
+  width: 214px;
+  height: 94px;
 }
 
 html,
