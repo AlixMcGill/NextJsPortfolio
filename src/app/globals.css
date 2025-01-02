@@ -9,7 +9,10 @@
   --footerBackground: #957E5E;
   --foreground: #171717;
   --blackText: black;
+  --textOnHover: white;
 }
+
+/* temp */
 
 /* Color Classes */
 
@@ -28,6 +31,9 @@
 .footer-bg {
   background-color: var(--footerBackground);
 }
+.black-bg {
+  background-color: var(--blackText);
+}
 
 .flex-container-spbtwn {
   display: flex;
@@ -38,6 +44,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-stack {
+  display: flex;
 }
 
 li {
@@ -50,10 +65,32 @@ li {
   margin: 1rem;
 }
 
-/* Fonts */
+.side-margin-5rem {
+  margin: 0rem 5rem;
+}
+
+/* Widths */
+.width-5rem {
+  width: 5rem;
+}
+.width-small {
+  width: 90%;
+}
+.width-medium {
+  width: 95%;
+}
+.width-large {
+  width: 100%;
+}
+
+/* Fonts & Text */
 
 .black-text {
-  color: var(--blackText)
+  color: var(--blackText);
+}
+
+.hover-text:hover {
+  color: var(--textOnHover);
 }
 
 .lily-script-font-regular {
@@ -89,10 +126,14 @@ li {
   font-size: 24px;
 }
 .font-mid-large {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .font-extra-large {
-  font-size: 96px;
+  font-size: 8rem;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .hard-shadow {
@@ -102,15 +143,99 @@ li {
   box-shadow: 0px 6px 0px black;
 }
 
+/* Button Component Styles */
+
 .button-base-styles {
   border-radius: 32px;
   border: 3px solid black;
   box-shadow: -6px 6px 0px black;
 }
 
+.button-base-styles:hover {
+  cursor: pointer;
+  background-color: var(--socialMediaBackground);
+}
+.button-base-styles:active {
+  transform: translateY(5px) translateX(-5px);
+  box-shadow: -1px 1px 0px black;
+}
+
 .button-size-large {
-  width: 214px;
-  height: 94px;
+  /* width: 214px;
+  height: 94px; */
+  width: 17rem;
+  height: 7.47rem;
+
+}
+
+.divider-base {
+  margin: .2rem 0rem;
+  border-radius: 10rem;
+  height: 4px;
+}
+
+.divider-container-size-100per {
+  width: 100%;
+}
+
+/* Hero Section Styles */
+
+.hero-canvas {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: absolute;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.mini-web-pages-img {
+  /* margin: 10rem; */
+  margin-top: 2rem;
+  width: 105%;
+  /* width: 672px; */
+}
+
+.hero-intro-text {
+  transform: translateY(-4rem);
+}
+
+.hero-right-side {
+  margin: 5rem;
+  height: 70vh;
+}
+
+.hht-container {
+  transform: translateY(-4rem) translateX(8rem);
+}
+.hero-heading-transform {
+  transform: translateX(-20rem);
+}
+.hero-heading-transform-small {
+  transform: translateX(-8rem) translateY(-1rem);
+  white-space: nowrap;
+}
+
+.hero-text-content-container {
+  margin: 1rem 5rem;
+}
+
+.hero-divider-lines {
+  transform: translateY(0rem);
+}
+
+.hero-button-container {
+  margin-top: 2rem;
+  gap: 8rem;
 }
 
 html,
