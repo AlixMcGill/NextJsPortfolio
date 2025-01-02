@@ -4,7 +4,7 @@ import DotAnimation from "./canvasDots";
 
 export default function Hero() {
     return (
-        <article className="hero-section flex-stack">
+        <article className="hero-section flex-stack z-index-neg5">
             <DotAnimation></DotAnimation>
             <section className="flex-container-spbtwn side-margin-5rem hero-content">
                 <div className="hero-left-side">

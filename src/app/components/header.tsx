@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <section className="header-section header-bg hard-shadow-center">
+    <section className="header-section header-bg hard-shadow-center z-index-5">
         <div className="flex-container-spbtwn side-margin-5rem">
             <div className="flex-container-spbtwn">
                 <h1 className="margin-1rem open-sans-font-regular font-medium">Alixander McGill</h1>
